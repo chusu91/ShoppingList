@@ -8,10 +8,8 @@ function deleteList(event) {
 }
 
 function addList(event) {
-  if (input.value === "") {
-    alert("please write the list");
-  } else {
-    event.preventDefault();
+  event.preventDefault();
+  if (input.value !== "") {
     const li = document.createElement("li");
     const span = document.createElement("span");
     span.innerHTML = input.value;
@@ -23,7 +21,7 @@ function addList(event) {
     li.appendChild(minusBtn);
     shoppingList.appendChild(li);
     li.scrollIntoView(); //scroll down 같이
-    input.value = " ";
+    input.value = "";
     input.focus();
   }
 }

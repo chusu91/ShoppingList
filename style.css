@@ -69,6 +69,7 @@ body {
   transition: transform("smooth");
 }
 .add > button:hover {
+  color: lightblue;
   transform: scale(1.1);
   transition: all 250ms ease;
 }
