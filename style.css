@@ -66,4 +66,15 @@ body {
 .add > button {
   font-size: 36px;
   margin-bottom: 10px;
+  transition: transform("smooth");
+}
+.add > button:hover {
+  transform: scale(1.1);
+  transition: all 250ms ease;
+}
+
+.minus_btn:hover {
+  color: darkred;
+  transform: scale(1.1);
+  transition: all 250ms ease;
 }

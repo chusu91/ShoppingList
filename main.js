@@ -16,6 +16,7 @@ function addList(event) {
     const span = document.createElement("span");
     span.innerHTML = input.value;
     const minusBtn = document.createElement("button");
+    minusBtn.setAttribute("class", "minus_btn");
     minusBtn.innerHTML = `<i class="fas fa-minus-circle"></i>`;
     minusBtn.addEventListener("click", deleteList);
     li.appendChild(span);
