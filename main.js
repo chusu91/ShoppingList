@@ -21,7 +21,9 @@ function addList(event) {
     li.appendChild(span);
     li.appendChild(minusBtn);
     shoppingList.appendChild(li);
+    li.scrollIntoView(); //scroll down 같이
     input.value = " ";
+    input.focus();
   }
 }
 
