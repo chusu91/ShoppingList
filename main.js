@@ -22,7 +22,7 @@ function addList(event) {
     shoppingList.appendChild(li);
     li.scrollIntoView(); //scroll down 같이
     input.value = "";
-    input.focus();
+    input.focus(); // 리스트 추가후에도 다시 인풋창에 포커스가 옴
   }
 }
 
